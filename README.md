@@ -14,7 +14,7 @@ To try this, please follow the following steps:
 ```
 
 
-- After all services is healthy, you need to visit [kaggle site](https://www.kaggle.com/datasets/shivamb/netflix-shows/download?datasetVersionNumber=5) to download sample netflix data for this demo. After downloaded successfully, create ad-hoc script to transform and insert data in Elasticsearch. 
+- After all services is healthy, you need to visit [kaggle site](https://www.kaggle.com/datasets/shivamb/netflix-shows/download?datasetVersionNumber=5) to download sample netflix data for this demo. After downloaded successfully, create ad-hoc script to transform and insert data in Elasticsearch.
 
 - Go to folder backend and set environment for backend (swagger api):
 
@@ -29,6 +29,8 @@ ES_PASSWORD=elasticpassword
 and, then start service swagger API:
 
 ```
+# Install package dependencies
+pip install -r requirements.txt
 python app.py
 ```
 
@@ -36,5 +38,5 @@ After run application successfully, the swagger api is ready to accept connectio
 
 
 
-- When all backend services function properly, navigate to folder frontend and click on file `index.html` to start the search engine in the browser. Enjoy!
-![results](images/search-engine-results.png)
+- When all backend services function properly, navigate to folder frontend/templates and click on file `index.html` to start the search engine in the browser. Enjoy!
+  ![results](images/search-engine-results.png)
